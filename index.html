@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Pramod - Software Developer</title>
+    <title>2Akshay Pramod - Software Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <!-- Gradient Background -->
-    <div class="gradient-bg"></div>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Akshay Pramod</a>
+            <a class="navbar-brand fs-4" href="#">Akshay Pramod</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -29,17 +28,18 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid p-2 bg-dark"> 
 
     <!-- Hero Section -->
-    <section class="hero-section" id="about">
+    <section class="hero-section section-bgm" id="about">
         <div class="overlay"></div>
-        <div class="container text-center content-wrapper">
+        <div class="container  content-wrapper">
             <div class="glass-effect">
                 <h1 class="display-4 mb-4">Akshay Pramod</h1>
                 <h3 class="mb-4">Software Developer</h3>
                 <p class="lead">Building innovative solutions with Python and Web Technologies</p>
                 <div class="mt-4">
-                    <a href="mailto:akshaypramod777@gmail.com" class="btn btn-light me-3">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akshaypramod777@gmail.com" target="_blank" class="btn btn-outline-light me-2">   
                         <i class="fas fa-envelope me-2"></i>Contact Me
                     </a>
                     <a href="https://www.linkedin.com/in/akshaypramod777" class="btn btn-outline-light">
@@ -50,31 +50,47 @@
         </div>
     </section>
 
+    <!-- About -->
+    <section class="section section-light" id="about">
+        <div class="container section-bg">
+            <h2 class="section-title">About</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card-custom">
+                        <h4 class="text mb-3">As a Software developer with over a year of experience at Perfect Fit Systems Private Limited, I have a proven track record of contributing to complex software projects within dynamic team
+                        environments, particularly in a fast-paced startup environment.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
-    <section class="section-padding" id="experience">
-        <div class="overlay"></div>
-        <div class="container content-wrapper">
-            <h2 class="text-center section-title">Professional Experience</h2>
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="experience-card">
-                        <h4>Software Developer</h4>
-                        <h6>Perfect Fit Systems Private Limited</h6>
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card-custom">
+                        <h3>Software Developer</h3>
+                        <h6 class="text-primary mb-3">Perfect Fit Systems Private Limited</h6>
                         <p class="text-info">Aug 2024 - Present</p>
                         <ul class="list-unstyled">
-                            <li>• Engineered AI-powered design template generator with 40% efficiency improvement</li>
-                            <li>• Developed Python Flask-based e-commerce automation platform</li>
-                            <li>• Created Python Image Rendering Engine with 50% improved efficiency</li>
+                            <li class="mb-2">• Engineered AI-powered design template generator (40% efficiency gain)</li>
+                            <li class="mb-2">• Developed Python Flask-based e-commerce automation platform</li>
+                            <li class="mb-2">• Created Python Image Rendering Engine (50% improved efficiency)</li>
                         </ul>
                     </div>
-                    <div class="experience-card">
-                        <h4>Technical Staff</h4>
-                        <h6>Cochin University of Science and Technology</h6>
+                </div>
+                <div class="timeline-item">
+                    <div class="card-custom">
+                        <h3>Technical Staff</h3>
+                        <h6 class="text-primary mb-3">Cochin University of Science and Technology</h6>
                         <p class="text-info">May 2023 - Aug 2024</p>
                         <ul class="list-unstyled">
-                            <li>• Led Python programming bridge courses for 50+ students</li>
-                            <li>• Improved student project completion rates by 30%</li>
-                            <li>• Optimized course preparation time by 20%</li>
+                            <li class="mb-2">• Led Python programming bridge courses for 50+ students</li>
+                            <li class="mb-2">• Improved student project completion rates by 30%</li>
+                            <li class="mb-2">• Optimized course preparation time by 20%</li>
                         </ul>
                     </div>
                 </div>
@@ -83,35 +99,30 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="section-padding" id="projects">
-        <div class="overlay"></div>
-        <div class="container content-wrapper">
-            <h2 class="text-center section-title">Featured Projects</h2>
+    <section class="section section-light" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="glass-effect project-card h-100">
-                        <div class="card-body">
-                            <h4>House Rent Prediction</h4>
-                            <p>Mobile App & ML Model</p>
-                            <ul class="list-unstyled">
-                                <li>• Achieved 82.9% accuracy in rent predictions</li>
-                                <li>• Built user interface with Python, HTML, JavaScript</li>
-                                <li>• Implemented tree-based algorithms</li>
-                            </ul>
-                        </div>
+                    <div class="card-custom">
+                        <h4 class="mb-3">House Rent Prediction</h4>
+                        <p class="text-primary mb-4">Mobile App & ML Model</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• Achieved 82.9% accuracy in rent predictions</li>
+                            <li class="mb-2">• Built user interface with Python, HTML, JavaScript</li>
+                            <li class="mb-2">• Implemented tree-based algorithms</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="glass-effect project-card h-100">
-                        <div class="card-body">
-                            <h4>IMPRO</h4>
-                            <p>Product Recommendation System</p>
-                            <ul class="list-unstyled">
-                                <li>• Developed Python-based recommendation engine</li>
-                                <li>• Implemented web scraping with BeautifulSoup4</li>
-                                <li>• Built RESTful APIs using Flask</li>
-                            </ul>
-                        </div>
+                    <div class="card-custom">
+                        <h4 class="mb-3">IMPRO</h4>
+                        <p class="text-primary mb-4">Product Recommendation System</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• Developed Python-based recommendation engine</li>
+                            <li class="mb-2">• Implemented web scraping with BeautifulSoup4</li>
+                            <li class="mb-2">• Built RESTful APIs using Flask</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -119,36 +130,35 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section-padding" id="skills">
-        <div class="overlay"></div>
-        <div class="container content-wrapper">
-            <h2 class="text-center section-title">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="glass-effect">
-                        <h4>Technologies</h4>
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h4 class="mb-4">Technologies</h4>
                         <div>
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">Flask</span>
-                            <span class="skill-badge">HTML5</span>
-                            <span class="skill-badge">CSS3</span>
-                            <span class="skill-badge">Bootstrap</span>
-                            <span class="skill-badge">MySQL</span>
-                            <span class="skill-badge">AWS EC2</span>
-                            <span class="skill-badge">Git</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">AWS EC2</span>
+                            <span class="skill-tag">Git</span>
                         </div>
                     </div>
                 
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="glass-effect">
-                        <h4>Professional Skills</h4>
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h4 class="mb-4">Professional Skills</h4>
                         <div>
-                            <span class="skill-badge">Problem Solving</span>
-                            <span class="skill-badge">Team Collaboration</span>
-                            <span class="skill-badge">Agile Development</span>
-                            <span class="skill-badge">Leadership</span>
-                            <span class="skill-badge">Self-motivated</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Agile Development</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Self-motivated</span>
                         </div>
                     </div>
                 </div>
@@ -157,13 +167,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4">
-        <div class="container text-center text-white">
-            <p>Contact: +91 8921563302 | akshaypramod777@gmail.com</p>
-            <p>Location: Kalliallpillil, Keezhiliam P.O, Perumbavoor, Kerala, India - 683541</p>
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>Contact: <a href="tel:+918921563302" class="contact-link">+91 8921563302</a> | 
+               <a href="mailto:akshaypramod777@gmail.com" class="contact-link">akshaypramod777@gmail.com</a></p>
+            <p class="mb-0">Kallialppillil, Keezhillam P.O, Perumbavoor, Kerala, India - 683541</p>
         </div>
-    </footer>
+    </footer>   
+</div>
+    <script>
+        // Scroll animation
+        const observerOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px"
+        };
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-custom, .section-title, .timeline-item').forEach((element) => {
+            element.classList.add('animate-on-scroll');
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>

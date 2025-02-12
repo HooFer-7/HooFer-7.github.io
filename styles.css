@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #2d3e50;
+    --secondary-color: #3498db;
+    --skill-color: #52606a;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section {
+    background: url('/api/placeholder/1920/1080') center/cover no-repeat;
+    color: white;
+    padding: 10rem 0;
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-padding {
+    padding: 2rem 0;
+    position: relative;
+}
+
+#experience {
+    background: url('/api/placeholder/1920/1080') center/cover fixed no-repeat;
+    color: white;
+}
+
+#projects {
+    background: url('/api/placeholder/1920/1080') center/cover fixed no-repeat;
+    color: white;
+}
+
+#skills {
+    background: url('/api/placeholder/1920/1080') center/cover fixed no-repeat;
+    color: white;
+}
+
+.skill-badge {
+    background-color: var(--skill-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.15rem;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.experience-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+.section-title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+/* Glass effect for cards */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animated gradient background for loading effect */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
